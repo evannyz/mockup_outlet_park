@@ -1,0 +1,401 @@
+<!-- Se crea nuevo proyecto implementando html5 -->
+<!DOCTYPE html>
+<!-- Pagina opcion ingles -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo pagina web -->
+    <title>Outlet Park</title>
+    <!-- Se implementa bootstrap  mediante cdn para comportamiento grafico-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Se implementa font awesome mediante cdn para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Se implementa libreria animate mediante cdn para sombras animadas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Se agrega favicon -->
+    <link rel="icon" href="img/Logo-vina-outlet-park.png">
+    <!-- Union con hoja de estilos css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Se añade barra de navegacion superior fijada en parte superior -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+
+            <div class="container p-3">
+
+                <!-- Logo outlet-->
+                <div class="row">
+                    <div class="col-2">
+                        <a class="navbar-brand" href="#"><img src="img/Logo-vina-outlet-park.png" id="logo-outlet"
+                                alt=""></a>
+                    </div>
+
+                    <!-- Botón de menú desplegable tipo hamburguesa, se colapsa al cambiar ancho de pantalla-->
+                    <div class="col-10 d-flex justify-content-end align-items-center ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Contenido de la barra de navegación -->
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                            <!-- Enlaces de la barra de navegación -->
+                            <div class="row col-12">
+
+                                <div class="col-4">
+                                    <a class="text-decoration-none text-dark custom-text h4 negritas"
+                                        href="#tiendas"><img src="img/ICON_BAG-24x24.png" class="custom-icon" alt="">
+                                        Tiendas</a>
+                                </div>
+
+                                <div class="col-4">
+                                    <a class="text-decoration-none text-dark custom-text h4 negritas"
+                                        href="#panoramas"><img src="img/ICON_PANORAMAS-24x24.png" class="custom-icon"
+                                            alt=""> Panoramas</a>
+                                </div>
+
+                                <div class="col-4">
+                                    <a class="text-decoration-none text-dark custom-text h4 negritas"
+                                        href="#ubicacion"><img src="img/ICON_GPS-24x24.png" class="custom-icon" alt="">
+                                        Ubicación</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fin barra de navegacion superior -->
+
+    <!-- Se agrega Header que contiene carrusel con tarjetas con las tiendas disponibles -->
+    <header class="container-fluid pt-5 px-0">
+        <div class="container-fluid pt-5 px-0">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <!-- Indicadores del carrusel, necesarios para la navegacion entre tarjetas -->
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Elementos del carrusel, en este caso 4 imagenes de la empresa -->
+                    <div class="carousel-item active">
+                        <img src="img/outlet_carrusel.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Banners-Septiembre-2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Banner-NOVIEMBRE-02.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/IMG_7295.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <!-- Controles del carrusel adelante y atras -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- FIN SECCION HEADER -->
+
+    <!-- Contenido Principal -->
+    <main class="container-fluid" id="contenedor-principal">
+        <!-- Sección Tiendas -->
+        <section class="container-fluid py-3" id="tiendas">
+
+            <!-- Título de la sección -->
+            <p class="h2 text-uppercase">Tiendas</p>
+
+            <!-- Tarjetas de tiendas -->
+
+            <div class="row py-3">
+
+                <div class="col-3">
+                    <div class="card position-relative">
+                        <img src="img/vop_MUJER-1_14.png" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-shadow">Mujer</a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card position-relative">
+                        <img src="img/vop_HOMBRE-1_09.png" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-shadow">Hombre</a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card position-relative">
+                        <img src="img/vop_INFANTIL-1_10.png" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-shadow">Infantil</a>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="card position-relative">
+                        <img src="img/vop_CASA-Y-DECORACION-1_03.png" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-shadow">Deco
+                            hogar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Sección Tiendas -->
+
+        <!-- Sección Panoramas -->
+        <section class="container-fluid py-3" id="panoramas">
+
+            <!-- Título de la sección -->
+            <p class="h2 text-uppercase">Panoramas</p>
+
+            <!-- Tarjetas de panoramas -->
+            <div class="row py-3">
+                <div class="col-3 py-3">
+                    <div class="card position-relative">
+                        <img src="img/vop_ShowInfantil.jpeg" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-shadow">Show
+                            infantil</a>
+                    </div>
+                </div>
+
+                <div class="col-3 py-3">
+                    <div class="card position-relative">
+                        <img src="img/vop_discoveryland_06.png" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-shadow">Discovery
+                            land</a>
+                    </div>
+                </div>
+
+                <div class="col-3 py-3">
+                    <div class="card position-relative">
+                        <img src="img/vop_RumRum-cars_16.png" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-shadow">rum
+                            rum cars</a>
+                    </div>
+                </div>
+
+                <div class="col-3 py-3">
+                    <div class="card position-relative">
+                        <img src="img/vop_COMIDA-1_04.png" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-shadow">patio
+                            de comida</a>
+                    </div>
+                </div>
+
+                <div class="col-3 py-3">
+                    <div class="card position-relative">
+                        <img src="img/vop_Feria-de-emprendedores_08.png" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-center text-shadow">Feria
+                            de emprendedores</a>
+                    </div>
+                </div>
+
+                <div class="col-3 py-3">
+                    <div class="card position-relative">
+                        <img src="img/categoria-mascota_horizontal.png" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-shadow">Mascota</a>
+                    </div>
+                </div>
+
+                <div class="col-3 py-3">
+                    <div class="card position-relative">
+                        <img src="img/vop_OUTDOOR-1_15.png" class="card-img" alt="...">
+                        <a href="#"
+                            class="card-link card-img-overlay d-flex justify-content-center align-items-center text-decoration-none h5 text-uppercase text-center text-shadow">Pronto
+                            más panoramas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Sección Panoramas -->
+
+        <!-- Sección Ubicación -->
+        <section class="container-fluid py-3" id="ubicacion">
+            <!-- Título de la sección -->
+            <p class="h2 text-uppercase">Ubicación de las tiendas</P>
+
+            <div class="container-fluid ">
+                <img class="img-fluid" src="img/Ubicacion.jpeg">
+            </div>
+        </section>
+        <!-- Fin Sección Ubicación -->
+    </main>
+    <!-- Fin Contenido principal -->
+
+    <!-- Pie de página -->
+    <footer id="pie-final" class="container-fluid py-3 px-0">
+        <!-- Sección de locomoción -->
+        <section id="locomocion" class=" py-4 container-fluid">
+            <!-- Título de la sección -->
+            <p class="text-center h1 text-uppercase text-white negritas">Locomoción</p>
+            <!-- Imágenes de locomoción -->
+            <div class="row pt-4">
+                <div class="col-3">
+                    <img class="img-fluid" src="img/desde-valparaiso.png" alt="">
+                </div>
+
+                <div class="col-3">
+                    <img class="img-fluid" src="img/desde-vina-del-mar.png" alt="">
+                </div>
+
+                <div class="col-3">
+                    <img class="img-fluid" src="img/desde-concon.png" alt="">
+                </div>
+
+                <div class="col-3">
+                    <img class="img-fluid" src="img/desde-el-interior-768x223.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Fin Sección de locomoción -->
+
+        <!-- Sección de información web -->
+        <section id="info-web" class="container-fluid">
+
+            <div class="container-fluid pt-5" id="contenedor-info">
+
+                <div class="row">
+                    <!-- Información de dirección -->
+                    <article class="col-4 container">
+                        <!-- Contenido de dirección, se menciona  -->
+                        <div class="container-fluid  ">
+                            <p class="text-white text-uppercase h4 negritas text-center">Dirección</p>
+                            <p class=" text-white pequeño"><i class="fa-solid fa-location-dot pt-5"></i> Camino Internacional
+                                2440, Reñaca Alto,
+                                Viña del Mar</p>
+
+                            <!-- Se añade mapa de ruta a la empresa -->
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="100%" height="100%" id="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=Camino+Internacional+2440%2C+Re%C3%B1aca+Alto%2C+Vi%C3%B1a+del+Mar&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- Se agrega los horarios  -->
+                    <article class="col-4">
+                        <div class="container">
+                            <p class="text-white text-uppercase h4 negritas text-center">Horario</p>
+                            <ul>
+                                <li class="text-white pt-5">
+                                    <div id="horarios">
+                                        <p class="text-uppercase negritas h5 text-white">LUNES A Domingo</p>
+                                        <p class="text-white">de 10:00 a 20:00 hrs.</p>
+                                    </div>
+
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="text-white">
+                                    <div id="estacionamiento" class="pt-3">
+                                        <p class="text-white text-uppercase h4 negritas">estacionamiento</p>
+                                        <p class="text-white"><span class="text-decoration-underline">GRATIS</span> los
+                                            primeros
+                                            30 minutos <br>Cada 1/2 hora = $500 pesos <br>Tarifa maxima = $3.500 pesos
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </article>
+
+                    <!-- Se agrega la informacion de contacto -->
+                    <article class="col-4">
+                        <p class="text-white text-uppercase h4 negritas text-center">Contacto</p>
+
+                        <div class="row" id="correo">
+                            <div class="col-2 d-flex align-items-center justify-content-center pt-5">
+                                <i class=" fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="col-10 pt-5">
+                                <p class="text-white">novedades@outletpark.cl</p>
+                            </div>
+                        </div>
+                        <div class="row" id="telefono">
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="col-10">
+                                <p class="text-white">32 251 4100</p>
+                            </div>
+                        </div>
+
+                        <div class="row pt-2" id="pet-friend">
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-inbox"></i>
+                            </div>
+                            <div class="col-10">
+                                <p class="text-white">Enviar mensaje</p>
+                            </div>
+                        </div>
+
+                        <!-- Botones de redes sociales -->
+                        <div id="redes" class="pt-3 container">
+                            <button type="button" class="btn custom-button btn-lg me-1"><i
+                                    class="fa-brands fa-facebook"></i></button>
+                            <button type="button" class="btn custom-button btn-lg"><i
+                                    class="fa-brands fa-instagram"></i></button>
+                        </div>
+                </div>
+                <!-- FIn contenedor de infoweb -->
+
+                </article>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- Sección de derechos de autor -->
+        <section class="pt-5 container-fluid" id="pie-final-pagina">
+            <p class="text-center text-white negritas">© 2020 Viña Outlet Park – Todos los derechos reservados. Diseñado por
+                WORKLab</p>
+        </section>
+        <!-- Fin Sección de derechos de autor -->
+    </footer>
+    <!-- FIN PIE DE PAGINA -->
+
+
+    <!-- Se implementa bootstrap  mediante cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

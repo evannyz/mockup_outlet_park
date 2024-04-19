@@ -49,19 +49,19 @@
                             <div class="row col-12">
 
                                 <div class="col-4">
-                                    <a class="text-uppercase text-decoration-none text-dark custom-text"
+                                    <a class="text-decoration-none text-dark custom-text h4 negritas"
                                         href="#tiendas"><img src="img/ICON_BAG-24x24.png" class="custom-icon" alt="">
                                         Tiendas</a>
                                 </div>
 
                                 <div class="col-4">
-                                    <a class="text-uppercase text-decoration-none text-dark custom-text"
+                                    <a class="text-decoration-none text-dark custom-text h4 negritas"
                                         href="#panoramas"><img src="img/ICON_PANORAMAS-24x24.png" class="custom-icon"
                                             alt=""> Panoramas</a>
                                 </div>
 
                                 <div class="col-4">
-                                    <a class="text-uppercase text-decoration-none text-dark custom-text"
+                                    <a class="text-decoration-none text-dark custom-text h4 negritas"
                                         href="#ubicacion"><img src="img/ICON_GPS-24x24.png" class="custom-icon" alt="">
                                         Ubicación</a>
 
@@ -128,7 +128,7 @@
         <section class="container-fluid py-3" id="tiendas">
 
             <!-- Título de la sección -->
-            <p class="text-center h1 text-uppercase negritas">Tiendas</p>
+            <p class="h2 text-uppercase">Tiendas</p>
 
             <!-- Tarjetas de tiendas -->
 
@@ -174,7 +174,7 @@
         <section class="container-fluid py-3" id="panoramas">
 
             <!-- Título de la sección -->
-            <p class="text-center h1 text-uppercase negritas">Panoramas</p>
+            <p class="h2 text-uppercase">Panoramas</p>
 
             <!-- Tarjetas de panoramas -->
             <div class="row py-3">
@@ -246,7 +246,7 @@
         <!-- Sección Ubicación -->
         <section class="container-fluid py-3" id="ubicacion">
             <!-- Título de la sección -->
-            <p class="text-center h1 text-uppercase negritas">Ubicación</P>
+            <p class="h2 text-uppercase">Ubicación de las tiendas</P>
 
             <div class="container-fluid ">
                 <img class="img-fluid" src="img/Ubicacion.jpeg">
@@ -257,9 +257,9 @@
     <!-- Fin Contenido principal -->
 
     <!-- Pie de página -->
-    <footer id="pie-final" class="container-fluid py-3">
+    <footer id="pie-final" class="container-fluid py-3 px-0">
         <!-- Sección de locomoción -->
-        <section id="locomocion" class=" py-4">
+        <section id="locomocion" class=" py-4 container-fluid">
             <!-- Título de la sección -->
             <p class="text-center h1 text-uppercase text-white negritas">Locomoción</p>
             <!-- Imágenes de locomoción -->
@@ -290,11 +290,12 @@
 
                 <div class="row">
                     <!-- Información de dirección -->
-                    <article class="col-4">
+                    <article class="col-4 container">
                         <!-- Contenido de dirección, se menciona  -->
-                        <div class="container">
-                            <p class="text-white text-uppercase h4 negritas">Dirección</p>
-                            <p class=" text-white h5"><i class="fa-solid fa-location-dot"></i> Camino Internacional
+                        <div class="container-fluid  ">
+                            <p class="text-white text-uppercase h4 negritas text-center">Dirección</p>
+                            <p class=" text-white pequeño"><i class="fa-solid fa-location-dot pt-5"></i> Camino
+                                Internacional
                                 2440, Reñaca Alto,
                                 Viña del Mar</p>
 
@@ -313,45 +314,38 @@
                     <!-- Se agrega los horarios  -->
                     <article class="col-4">
                         <div class="container">
-                            <p class="text-white text-uppercase h4 negritas">Horarios</p>
-
-                            <div class="row" id="horarios">
-                                <div class="col-2 d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-store"></i>
-                                </div>
-                                <div class="col-10">
-                                    <p class="text-uppercase negritas h5 texto-naranjo">LUNES A SÁBADO</p>
-                                    <p class="text-white">de 10:00 a 20:00 hrs.</p>
-                                </div>
-                            </div>
-                            <div class="row" id="horarios2">
-                                <div class="col-2 d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-store"></i>
-                                </div>
-                                <div class="col-10">
-                                    <p class="text-uppercase negritas h5 texto-naranjo">DOMINGO Y FESTIVOS</p>
-                                    <p class="text-white">de 10:00 a 19:30 hrs.</p>
-                                </div>
-                            </div>
-
-                            <div id="estacionamiento" class="pt-5">
-                                <p class="text-white text-uppercase h4 negritas">estacionamiento</p>
-                                <p class="text-white"><span class="text-decoration-underline">GRATIS</span> los primeros
-                                    30 minutos <br>Cada 1/2 hora = $500 pesos <br>Tarifa maxima = $3.500 pesos</p>
-                            </div>
-
+                            <p class="text-white text-uppercase h4 negritas text-center">Horario</p>
+                            <ul>
+                                <li class="text-white pt-5">
+                                    <div id="horarios">
+                                        <p class="text-uppercase negritas h5 text-white">LUNES A Domingo</p>
+                                        <p class="text-white">de 10:00 a 20:00 hrs.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="text-white">
+                                    <div id="estacionamiento" class="pt-3">
+                                        <p class="text-white text-uppercase h4 negritas">estacionamiento</p>
+                                        <p class="text-white"><span class="text-decoration-underline">GRATIS</span> los
+                                            primeros
+                                            30 minutos <br>Cada 1/2 hora = $500 pesos <br>Tarifa maxima = $3.500 pesos
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </article>
 
                     <!-- Se agrega la informacion de contacto -->
                     <article class="col-4">
-                        <p class="text-white text-uppercase h4 negritas">Contacto</p>
+                        <p class="text-white text-uppercase h4 negritas text-center">Contacto</p>
+
                         <div class="row" id="correo">
-                            <div class="col-2 d-flex align-items-center justify-content-center">
+                            <div class="col-2 d-flex align-items-center justify-content-center pt-5">
                                 <i class=" fa-regular fa-envelope"></i>
                             </div>
-                            <div class="col-10">
-                                <p class="text-uppercase negritas h5 texto-naranjo">CORREO ELECTRÓNICO</p>
+                            <div class="col-10 pt-5">
                                 <p class="text-white">novedades@outletpark.cl</p>
                             </div>
                         </div>
@@ -360,40 +354,39 @@
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div class="col-10">
-                                <p class="text-uppercase negritas h5 texto-naranjo">TELÉFONO</p>
                                 <p class="text-white">32 251 4100</p>
                             </div>
                         </div>
 
                         <div class="row pt-2" id="pet-friend">
                             <div class="col-2 d-flex align-items-center justify-content-center">
-                                <i class="fa-solid fa-dog"></i>
+                                <i class="fa-solid fa-inbox"></i>
                             </div>
                             <div class="col-10">
-                                <p class="text-uppercase negritas text-white">REGLAMENTO PET FRIENDLY</p>
+                                <p class="text-white">Enviar mensaje</p>
                             </div>
                         </div>
 
                         <!-- Botones de redes sociales -->
-                        <div id="redes" class="pt-3 d-flex justify-content-center container">
-                            <button type="button" class="btn custom-button btn-lg me-2"><i
-                                    class="fa-brands fa-facebook text-white"></i></button>
+                        <div id="redes" class="pt-3 container">
+                            <button type="button" class="btn custom-button btn-lg me-1"><i
+                                    class="fa-brands fa-facebook"></i></button>
                             <button type="button" class="btn custom-button btn-lg"><i
-                                    class="fa-brands fa-instagram text-white"></i></button>
+                                    class="fa-brands fa-instagram"></i></button>
                         </div>
                 </div>
                 <!-- FIn contenedor de infoweb -->
 
                 </article>
             </div>
-
             </div>
         </section>
 
         <!-- Sección de derechos de autor -->
         <section class="pt-5 container-fluid" id="pie-final-pagina">
-            <p class="text-center text-white">© 2024 VIÑA OUTLET PARK – TODOS LOS DERECHOS RESERVADOS. DISEÑADO POR
-                WORKLAB </p>
+            <p class="text-center text-white negritas">© 2020 Viña Outlet Park – Todos los derechos reservados. Diseñado
+                por
+                WORKLab</p>
         </section>
         <!-- Fin Sección de derechos de autor -->
     </footer>

@@ -1,0 +1,99 @@
+/* Definición de variables de color */
+:root {
+    --main-bg-white: #F7F7F7;
+    --main-bg-orange: #ED7121;
+    --main-bg-pastel-lily: #F5EDFF;
+    --main-bg-purple: #3A328A;
+    --main-bg-orange2: #F67303;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: var(--main-bg-white);
+}
+
+/* Estilos del logo de outletpark */
+#logo-outlet {
+    width: 3.503rem;
+    height: 3.75rem;
+}
+
+/* Estilos para texto personalizado */
+.custom-text {
+    font-weight: bolder;
+}
+
+/* Estilos para iconos personalizados */
+.custom-icon {
+    height: 2rem;
+}
+
+/* Estilos para enlaces dentro de elementos con posición relativa */
+.position-relative a {
+    text-decoration: none;
+    color: var(--main-bg-white);
+    font-weight: 900;
+}
+
+/* Estilos de sombra para textos de las tarjetas */
+.text-shadow {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos del contenedor principal */
+.contenedor-principal {
+    background-color: var(--main-bg-pastel-lily);
+}
+
+/* Estilos del pie de página */
+#pie-final {
+    background-color: var(--main-bg-purple);
+}
+
+/* Estilos para texto en negrita */
+.negritas {
+    font-weight: 900 !important;
+}
+
+/* Estilos para el mapa */
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 8rem;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para iconos específicos de la seccion infoweb */
+.fa-store,
+.fa-envelope,
+.fa-phone,
+.fa-inbox {
+    font-size: 1.5rem;
+    color: var(--main-bg-white);
+}
+
+/* Estilos para texto con color naranjo */
+.texto-naranjo {
+    color: var(--main-bg-orange2);
+}
+
+/* Estilos para botones personalizados */
+.custom-button {
+    background-color: var(--main-bg-white);
+}
+
+.fa-facebook, .fa-instagram{
+    color: var(--main-bg-purple);
+
+}
+
+.pequeño{
+    font-size: 0.93rem;
+}
